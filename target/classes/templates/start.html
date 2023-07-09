@@ -1,0 +1,56 @@
+<html lang="en">
+
+	<head>
+	
+	    <title>Pagina di avvio partita</title>
+	
+	    <link rel="stylesheet" href="./css/startbutton.css">
+	
+	    <style>
+	
+	        body {
+	            font-family: Copperplate, fantasy;
+	            color: #fff;
+	            display: flex;
+	            justify-content: center;
+	            align-items: center;
+	            min-height: 100vh;
+	            overflow: hidden;
+	            margin: 0;
+	            padding: 0;
+	            background-image: url('../img/robot.jpg');
+	            background-size: cover;
+	        }
+	
+	        .welcome-container {
+	            position: absolute;
+	            top: 50%;
+	            left: 60%;
+	            transform: translate(-50%, -50%);
+	            text-align: center;
+	        }
+	
+	        .welcome-text {
+	            font-size: 24px;
+	            margin-bottom: 20px;
+	        }
+	
+	    </style>
+	
+	</head>
+
+	<body>
+	
+	    <div class="welcome-container">
+	        <div class="welcome-text">
+	            <p>Benvenuto in ENACTEST: TESTING GAME!</p>
+	            <p>Premi il pulsante in basso per iniziare una nuova partita.</p>
+	        </div>
+	        <a href='./login'> <!-- chiamata alla funzione del controller "login" -->
+	            <button class="box"><h1>Avvio Partita</h1></button>
+	    	</a>
+	    </div>
+	    
+	</body>
+
+</html>

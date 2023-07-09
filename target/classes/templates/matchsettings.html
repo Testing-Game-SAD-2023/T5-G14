@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Configurazione della partita</title>
+		<link rel="stylesheet" href="./css/matchsettings.css">
+	</head>
+	
+	<body>
+		<div id="gamerID"><span th:text="${model}"></span></div> <!-- recupero del parametro Model (ID del
+		 														 Giocatore) fornito in ingresso alla View -->
+		<div class="container">
+			<select id="classesMenu">
+				<option value="">Seleziona una classe</option>
+			</select>
+			<select id="robotsMenu">
+				<option value="">Seleziona un robot</option>
+				<option value="Evosuite">Evosuite</option>
+				<option value="Randoop">Randoop</option>
+			</select>
+			<button id="btnConferma">Conferma</button>
+		</div>
+		<!-- Di seguito sono presenti i riferimenti ai due file javascript utilizzati. Per il primo é presente
+		il parametro type = module poiché importa la funzione presente nel secondo file javascript. -->
+		<script src="./js/matchsettings.js" type=module></script>
+		<script src="./js/taskT6.js"></script>
+	</body>
+	
+</html>
